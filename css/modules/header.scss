@@ -7,6 +7,15 @@ header{
 	}
 	.logo{
 		@include span-columns(4)
+		@include pad(20px);
+		a{
+			//background: url(../svg/logo.svg) no-re
+			svg{
+				max-width: 100px;
+				height: auto;
+				outline: 1px solid pink;
+			}
+		}
 	}
 	nav{
 		@include span-columns(8);
@@ -19,6 +28,8 @@ header{
 				a{
 					padding: 20px;
 					display: block;
+					font-weight: 400;
+					font-size: 18px;
 				}
 			}
 		}
