@@ -91,6 +91,5 @@ textarea {
 
 .wrapper{
     @include outer-container;
+    @include pad(30px);
 }
-
-

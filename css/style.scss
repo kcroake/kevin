@@ -17,6 +17,8 @@ $gray: #414141;
 $greenGray: #CCDFCB;
 $red: #FF6A5C;
 $teal: #056571;
+$tablet: new-breakpoint(max-width 768px 4);
+$mobile: new-breakpoint(max-width 480px 4);
 /* ========================================================================== */
 /* Author's custom styles */
 /* ========================================================================== */
@@ -55,9 +57,20 @@ $teal: #056571;
 	}
 }
 
-
-
-
+.contact{
+	ul{
+		@include span-columns(8);
+		@include shift(2);
+		li{
+			label{
+				display: none;
+			}
+			input[type='text'], input[type='email']{
+				
+			}
+		}
+	}
+}
 
 
 

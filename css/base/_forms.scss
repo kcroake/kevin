@@ -82,3 +82,12 @@ select {
   max-width: 100%;
   width: auto;
 }
+
+input[type="text"], input[type="email"]{
+    border-radius: 0;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    box-shadow: none;
+    border-bottom: 3px solid #000;
+}

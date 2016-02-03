@@ -1,8 +1,9 @@
 // Typography
-@import url(https://fonts.googleapis.com/css?family=Bitter:400,700,400italic|Raleway:100,300,400,700);
-$base-font-family: 'Raleway', sans-serif;
+//@import url(https://fonts.googleapis.com/css?family=Bitter:400,700,400italic|Raleway:100,300,400,700);font-family: 'Ubuntu', sans-serif;
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,300italic,700,400,400italic|Abel);
+$base-font-family: 'Ubuntu', sans-serif;
 $base: $base-font-family;
-$heading-font-family: 'Bitter', serif;
+$heading-font-family: 'Abel', sans-serif;
 $head: $heading-font-family;
 // Font Sizes
 $base-font-size: 1em;
