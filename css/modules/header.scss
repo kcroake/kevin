@@ -1,0 +1,26 @@
+header{
+	position: absolute;
+	width: 100%;
+	top: 0;
+	.header-inner{
+		@include outer-container;
+	}
+	.logo{
+		@include span-columns(4)
+	}
+	nav{
+		@include span-columns(8);
+
+		ul{
+			float: right;
+			text-align: right;
+			li{
+				display: inline-block;
+				a{
+					padding: 20px;
+					display: block;
+				}
+			}
+		}
+	}
+}

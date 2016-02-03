@@ -1,0 +1,79 @@
+@import "bourbon/bourbon";
+@import "neat/neat";
+@import "base/base";
+@import 'parts/normalize.scss';
+@import 'parts/font.scss';
+@import 'parts/globals.scss';
+@import 'parts/helpers.scss';
+$greatestThing: false !default;
+@if $greatestThing == true or $greatestThing == yes {
+	*{
+		outline: 1px solid rgba(0,0,0,.2);
+	}
+}
+
+//Vars
+$gray: #414141;
+$greenGray: #CCDFCB;
+$red: #FF6A5C;
+$teal: #056571;
+/* ========================================================================== */
+/* Author's custom styles */
+/* ========================================================================== */
+
+@import 'modules/header.scss';
+
+@import 'modules/hero.scss';
+
+@import 'modules/about.scss';
+
+@import 'modules/work.scss';
+
+#my-blog{
+	ul{
+		li{
+			@include span-columns(6);
+			.thumbnail{
+				shape-outside: circle();
+				float: left;
+				height: 100px;
+				width: 100px;
+				overflow: hidden;
+				border-radius: 100px;
+				margin: -18px 32px 10px 0;
+			}
+
+			h2{
+				font-size: 2em;
+				font-weight: 300;
+				margin-bottom: 10px;
+			}
+			p{
+				font-size: 85%;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+//@import 'parts/print.scss';

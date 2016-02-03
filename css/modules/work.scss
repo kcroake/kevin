@@ -1,0 +1,21 @@
+.work{
+	ul{
+		 @include span-columns(12);
+
+		 text-align: center;
+		li{
+			 @include span-columns(4 of 12);
+			 @include omega(3n);
+			 margin-bottom: 30px;
+				img{
+					width: 100%;
+					height: auto;
+				}
+				.hover-title{
+					// opacity: 0;
+					// visibility: hidden;
+					background: red;
+				}
+		}
+	}
+}

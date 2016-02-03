@@ -1,0 +1,32 @@
+.intro{
+	padding: 100px 0 0 0;
+	height: 500px;
+	background: $red;
+	overflow: hidden;
+
+	h1{
+
+		position: absolute;
+		font-size: 4em;
+
+		small{
+			display: block;
+			font-weight: normal;
+			font-family: $base;
+		}
+	}
+	.portrait{
+		position: relative;
+		border-radius: 300px;
+		overflow: hidden;
+		float: right;
+		@include size(325px);
+		//@include span-columns(4);
+		box-shadow: 5px 6px 0px 2px $greenGray;
+		img{
+			max-width: 100%;
+			width: 100%;
+			position: absolute;
+		}
+	}
+}
