@@ -7,7 +7,7 @@
 
 		 text-align: center;
 		figure{
-			background: $red;
+			background: rgba(38,38,38,0.85);
 			margin: 0;
 			position: relative;
 			overflow: hidden;
@@ -41,7 +41,7 @@
 				figcaption{
 					padding: 2em;
 					color: #fff;
-					text-transform: uppercase;
+					//text-transform: uppercase;
 					font-size: 1.25em;
 					position: absolute;
 					top: 0;

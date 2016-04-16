@@ -1,9 +1,10 @@
 // Typography
 //@import url(https://fonts.googleapis.com/css?family=Bitter:400,700,400italic|Raleway:100,300,400,700);font-family: 'Ubuntu', sans-serif;
-@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,300italic,700,400,400italic|Abel);
-$base-font-family: 'Ubuntu', sans-serif;
+//@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,300italic,700,400,400italic|Abel);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:700,300|Roboto+Condensed:400,300,700,400italic);
+$base-font-family:'Roboto Slab', serif;
 $base: $base-font-family;
-$heading-font-family: 'Abel', sans-serif;
+$heading-font-family: 'Roboto Condensed', sans-serif;
 $head: $heading-font-family;
 // Font Sizes
 $base-font-size: 1em;
