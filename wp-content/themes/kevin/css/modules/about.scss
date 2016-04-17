@@ -1,14 +1,1 @@
-.about-wrap{
-    text-align: right;
-    @include span-columns(3);
-    h1,h2{margin: 0;}
-}
 
-article{
-    @include span-columns(9);
-    .button{
-        &:nth-child(2){
-            margin: 0 0 0 10px;
-        }
-    }
-}

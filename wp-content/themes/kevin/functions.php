@@ -24,6 +24,48 @@ class StarterSite extends TimberSite {
 
 	function register_post_types() {
 		//this is where you can register custom post types
+		// Sample Register Post
+		$postName         = 'Work'; // Name of post type
+		$postNameSlug     = 'my-work'; // Name of post type
+		$postNameSingular = 'Work Post'; // Singular Name
+		$postNamePlural   = 'Work Posts'; // Plural Name
+		register_post_type(
+			$postNameSlug, array(
+				'labels' => array(
+			       'name' => $postName,
+			       'singular_name' => $postNameSingular,
+			       'add_new' => 'Add ' . $postNameSingular,
+			       'add_new_item' => 'Add ' . $postNameSingular,
+			       'edit_item' => 'Edit ' . $postNameSingular,
+			       'search_items' => 'Search ' . $postNamePlural,
+			       'not_found' => 'No ' . $postNamePlural. ' found',
+			       'not_found_in_trash' => 'No ' . $postNamePlural. ' found in trash'
+			    ),
+				'public' => true,
+				'show_ui' => true,
+				'capability_type' => 'post',
+				'hierarchical' => true,
+				'rewrite' => array('slug' => $postNameSlug),
+				'query_var' => true,
+				'show_in_nav_menus' => true,
+				'exclude_from_search' => false,
+				'has_archive' => false,
+				'menu_icon' => 'dashicons-portfolio',
+				'supports' => array(
+		    		'title',
+		    		'editor',
+		    		'author',
+		    		'thumbnail', //featured image, theme must also support thumbnails
+		    		'excerpt',
+		    		//'trackbacks',
+		    		'custom-fields',
+		    		//'comments',
+		    		'revisions',
+		    		'page-attributes' //template and menu order, hierarchical must be true
+				)
+			)
+		);
+
 	}
 
 	function register_taxonomies() {

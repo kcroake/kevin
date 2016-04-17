@@ -1,10 +1,13 @@
 // Typography
 //@import url(https://fonts.googleapis.com/css?family=Bitter:400,700,400italic|Raleway:100,300,400,700);font-family: 'Ubuntu', sans-serif;
 //@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,300italic,700,400,400italic|Abel);
-@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:700,300|Roboto+Condensed:400,300,700,400italic);
-$base-font-family:'Roboto Slab', serif;
+//@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:700,300|Roboto+Condensed:400,300,700,400italic);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,900,300);
+//   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+
+$base-font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 $base: $base-font-family;
-$heading-font-family: 'Roboto Condensed', sans-serif;
+$heading-font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 $head: $heading-font-family;
 // Font Sizes
 $base-font-size: 1em;
@@ -24,6 +27,8 @@ $blue: #1565c0;
 $dark-gray: #333;
 $medium-gray: #999;
 $light-gray: #ddd;
+$green: #30D683;
+$d-gray: #606060;
 
 // Font Colors
 $base-font-color: $dark-gray;

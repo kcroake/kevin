@@ -15,8 +15,8 @@
 			min-width: 320px;
 			max-width: 480px;
 			max-height: 360px;
-			@include span-columns(6 of 12);
-			@include omega(2n);
+			@include span-columns(3 of 12);
+			@include omega(3n);
 			 margin-bottom: 30px;
 				img{
 					position: relative;
