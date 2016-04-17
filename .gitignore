@@ -1,3 +1,7 @@
 _site
 .sass-cache
 wp-config.php
+wp-content/plugins/
+wp-content/themes/twentyfifteen
+wp-content/themes/twentyfourteen
+wp-content/themes/twentysixteen

@@ -54,3 +54,11 @@ function myfoo( $text ) {
 	$text .= ' bar!';
 	return $text;
 }
+
+//Styles
+function wpdocs_scripts() {
+    wp_enqueue_style( 'style', get_stylesheet_directory_uri().'/css/style.css', array(), '1.0.0', 'screen' );
+    //wp_enqueue_script( '', get_template_directory_uri() . '/js/example.js', array(), '1.0.0', true );
+}
+add_action( 'wp_enqueue_scripts', 'wpdocs_scripts' );
+//Javascripts
