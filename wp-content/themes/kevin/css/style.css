@@ -148,7 +148,7 @@ th {
   vertical-align: middle; }
 
 body {
-  color: #333;
+  color: #606060;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 1em;
   line-height: 1.5; }
@@ -620,7 +620,7 @@ textarea {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
-  padding: 30px; }
+  padding: 0 20px; }
   .wrapper::after {
     clear: both;
     content: "";
@@ -778,123 +778,134 @@ header {
     width: 10px;
     right: 0; }
 
-.work .grid {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 100%;
-  text-align: center; }
-  .work .grid:last-child {
-    margin-right: 0; }
-  @media screen and (max-width: 480px) {
-    .work .grid {
-      float: left;
-      display: block;
-      margin-right: 7.42297%;
-      width: 100%; }
-      .work .grid:last-child {
-        margin-right: 0; } }
-  .work .grid figure {
-    background: rgba(38, 38, 38, 0.85);
-    margin: 0;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    min-width: 320px;
-    max-width: 480px;
-    max-height: 360px;
+.about {
+  height: auto;
+  padding: 100px 0; }
+  .about h1 {
+    font-size: 3.625em;
+    font-weight: 900;
+    color: #4a4a4a; }
+
+.work {
+  background: #F5F5F5;
+  padding: 30px 0; }
+  .work .grid {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 23.23176%;
-    margin-bottom: 30px; }
-    .work .grid figure:last-child {
+    width: 100%;
+    text-align: center; }
+    .work .grid:last-child {
       margin-right: 0; }
-    .work .grid figure:nth-child(3n) {
-      margin-right: 0; }
-    .work .grid figure:nth-child(3n+1) {
-      clear: left; }
-    .work .grid figure img {
-      position: relative;
-      display: block;
-      min-height: 100%;
-      width: 100%;
-      height: auto;
-      max-width: none;
-      width: -webkit-calc(100% + 20px);
-      width: calc(100% + 20px);
-      -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-      transition: opacity 0.35s, transform 0.35s;
-      -webkit-transform: translate3d(-10px, 0, 0);
-      transform: translate3d(-10px, 0, 0);
-      -webkit-backface-visibility: hidden;
-      backface-visibility: hidden; }
-    .work .grid figure a {
-      height: 100%;
-      width: 100%;
-      position: absolute;
-      top: 0;
-      left: 0; }
-    .work .grid figure figcaption {
-      padding: 2em;
-      color: #fff;
-      font-size: 1.25em;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      text-align: left;
-      -webkit-backface-visibility: hidden;
-      backface-visibility: hidden; }
-      .work .grid figure figcaption:before, .work .grid figure figcaption:after {
-        pointer-events: none; }
-    .work .grid figure h2 {
+    @media screen and (max-width: 480px) {
+      .work .grid {
+        float: left;
+        display: block;
+        margin-right: 7.42297%;
+        width: 100%; }
+        .work .grid:last-child {
+          margin-right: 0; } }
+    .work .grid figure {
+      background: rgba(38, 38, 38, 0.85);
+      margin: 0;
       position: relative;
       overflow: hidden;
-      padding: 0.5em 0; }
-      .work .grid figure h2:after {
+      cursor: pointer;
+      min-width: 320px;
+      max-width: 480px;
+      max-height: 360px;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 23.23176%;
+      margin-bottom: 30px; }
+      .work .grid figure:last-child {
+        margin-right: 0; }
+      .work .grid figure:nth-child(3n) {
+        margin-right: 0; }
+      .work .grid figure:nth-child(3n+1) {
+        clear: left; }
+      .work .grid figure img {
+        position: relative;
+        display: block;
+        min-height: 100%;
+        width: 100%;
+        height: auto;
+        max-width: none;
+        width: -webkit-calc(100% + 20px);
+        width: calc(100% + 20px);
+        -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+        transition: opacity 0.35s, transform 0.35s;
+        -webkit-transform: translate3d(-10px, 0, 0);
+        transform: translate3d(-10px, 0, 0);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden; }
+      .work .grid figure a {
+        height: 100%;
+        width: 100%;
         position: absolute;
-        bottom: 0;
+        top: 0;
+        left: 0; }
+      .work .grid figure figcaption {
+        padding: 2em;
+        color: #fff;
+        font-size: 1.25em;
+        position: absolute;
+        top: 0;
         left: 0;
         width: 100%;
-        height: 3px;
-        background: #fff;
-        content: '';
-        -webkit-transition: -webkit-transform 0.35s;
-        transition: transform 0.35s;
-        -webkit-transform: translate3d(-100%, 0, 0);
-        -moz-transform: translate3d(-100%, 0, 0);
-        -ms-transform: translate3d(-100%, 0, 0);
-        -o-transform: translate3d(-100%, 0, 0);
-        transform: translate3d(-100%, 0, 0); }
-    .work .grid figure p {
-      padding: 1em 0;
-      opacity: 0;
-      -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-      transition: opacity 0.35s, transform 0.35s;
-      -webkit-transform: translate3d(100%, 0, 0);
-      transform: translate3d(100%, 0, 0); }
-    .work .grid figure:hover img {
-      opacity: 0.4;
-      -webkit-transform: translate3d(0, 0, 0);
-      -moz-transform: translate3d(0, 0, 0);
-      -ms-transform: translate3d(0, 0, 0);
-      -o-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0); }
-    .work .grid figure:hover h2:after {
-      -webkit-transform: translate3d(0, 0, 0);
-      -moz-transform: translate3d(0, 0, 0);
-      -ms-transform: translate3d(0, 0, 0);
-      -o-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0); }
-    .work .grid figure:hover p {
-      opacity: 1;
-      -webkit-transform: translate3d(0, 0, 0);
-      -moz-transform: translate3d(0, 0, 0);
-      -ms-transform: translate3d(0, 0, 0);
-      -o-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0); }
+        height: 100%;
+        text-align: left;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden; }
+        .work .grid figure figcaption:before, .work .grid figure figcaption:after {
+          pointer-events: none; }
+      .work .grid figure h2 {
+        position: relative;
+        overflow: hidden;
+        padding: 0.5em 0; }
+        .work .grid figure h2:after {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 3px;
+          background: #fff;
+          content: '';
+          -webkit-transition: -webkit-transform 0.35s;
+          transition: transform 0.35s;
+          -webkit-transform: translate3d(-100%, 0, 0);
+          -moz-transform: translate3d(-100%, 0, 0);
+          -ms-transform: translate3d(-100%, 0, 0);
+          -o-transform: translate3d(-100%, 0, 0);
+          transform: translate3d(-100%, 0, 0); }
+      .work .grid figure p {
+        padding: 1em 0;
+        opacity: 0;
+        -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+        transition: opacity 0.35s, transform 0.35s;
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0); }
+      .work .grid figure:hover img {
+        opacity: 0.4;
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0); }
+      .work .grid figure:hover h2:after {
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0); }
+      .work .grid figure:hover p {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0); }
 
 #my-blog ul li {
   float: left;
@@ -947,3 +958,5 @@ header {
    ========================================================================== */
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */ }
+
+/*# sourceMappingURL=style.css.map */

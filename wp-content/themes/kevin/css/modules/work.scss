@@ -1,4 +1,6 @@
 .work{
+	background: $lighter-gray;
+	padding: 30px 0;
 	.grid{
 		 @include span-columns(12);
 		 @include media($mobile) {
