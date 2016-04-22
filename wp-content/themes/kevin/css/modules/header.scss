@@ -1,4 +1,45 @@
 header{
+	.header-inner{
+		@include outer-container;
+	}
+	h1{
+		text-transform: uppercase;
+		text-align: center;
+		line-height: .4;
+		font-size: 10.5vw;
+		margin: 0;
+		letter-spacing: .075em;
+	}
+	.navigation{
+		position: absolute;
+		width: 100%;
+		top: 0; left:0;
+		padding: .25em 0;
+		background: rgba(#fff,.5);
+	}
+	nav{
+		@include span-columns(12);
+		ul{
+
+			@include display(flex);
+			@include flex-direction(row);
+			@include justify-content(center);
+			@include flex-wrap(wrap);
+			li{
+				 //@include flex(1);
+				 @include align-items(flex-start);
+				 text-align: center;
+				 padding: 0 2em;
+				 a{
+					 font-size: 1em;
+					 text-transform: uppercase;
+					 font-weight: bold;
+				 }
+			}
+		}
+	}
+}
+/* header{
 	//position: absolute;
 	width: 100%;
 	margin: 10px 0 0 0;
@@ -73,3 +114,4 @@ header{
 		right: 0;
 	}
 }
+*/

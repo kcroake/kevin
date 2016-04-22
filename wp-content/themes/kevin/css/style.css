@@ -13,7 +13,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "Avenir Next W01", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 1em;
   -webkit-font-smoothing: antialiased;
   font-weight: 600;
@@ -52,7 +52,7 @@ label {
 input,
 select {
   display: block;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "Avenir Next W01", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 1em; }
 
 input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], input:not([type]), textarea,
@@ -62,7 +62,7 @@ select[multiple] {
   border-radius: 3px;
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
   box-sizing: border-box;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "Avenir Next W01", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 1em;
   margin-bottom: 0.75em;
   padding: 0.5em;
@@ -149,7 +149,7 @@ th {
 
 body {
   color: #606060;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "Avenir Next W01", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 1em;
   line-height: 1.5; }
 
@@ -159,7 +159,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "Avenir Next W01", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 1em;
   line-height: 1.2;
   margin: 0 0 0.75em; }
@@ -632,7 +632,7 @@ textarea {
   margin: 10px 0;
   padding: 10px 20px;
   border: 3px solid #000;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "Avenir Next W01", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   color: #000;
   text-transform: uppercase;
   font-weight: 700; }
@@ -704,80 +704,162 @@ textarea {
 /* ========================================================================== */
 /* Author's custom styles */
 /* ========================================================================== */
-header {
+header .header-inner {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  header .header-inner::after {
+    clear: both;
+    content: "";
+    display: table; }
+header h1 {
+  text-transform: uppercase;
+  text-align: center;
+  line-height: .4;
+  font-size: 10.5vw;
+  margin: 0;
+  letter-spacing: .075em; }
+header .navigation {
+  position: absolute;
   width: 100%;
-  margin: 10px 0 0 0; }
-  header .header-inner {
-    max-width: 68em;
-    margin-left: auto;
-    margin-right: auto; }
-    header .header-inner::after {
-      clear: both;
-      content: "";
-      display: table; }
-  header .logo {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 31.76157%;
-    padding: 20px; }
-    header .logo:last-child {
-      margin-right: 0; }
-    header .logo a {
-      word-spacing: 0;
-      text-transform: uppercase;
-      color: #606060;
-      font-weight: 700;
-      font-size: 24px; }
-      header .logo a span {
-        color: #30D683; }
-  header nav {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 65.88078%; }
-    header nav:last-child {
-      margin-right: 0; }
-    header nav ul {
-      float: right;
-      text-align: right;
-      margin: 15px 0 0 0; }
-      header nav ul li {
-        display: inline-block;
-        margin: 0 20px; }
-        header nav ul li a {
-          padding: 10px 4px;
-          display: block;
-          text-transform: uppercase;
-          font-weight: 700;
-          color: #414141;
-          font-size: 18px;
-          border-bottom: 4px solid transparent; }
-          header nav ul li a:hover {
-            border-color: #414141;
-            color: #30D683; }
+  top: 0;
+  left: 0;
+  padding: .25em 0;
+  background: rgba(255, 255, 255, 0.5); }
+header nav {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  header nav:last-child {
+    margin-right: 0; }
+  header nav ul {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    box-direction: normal;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-direction: row;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    box-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+    -webkit-box-lines: multiple;
+    -moz-box-lines: multiple;
+    box-lines: multiple;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    header nav ul li {
+      -webkit-box-align: start;
+      -moz-box-align: start;
+      box-align: start;
+      -webkit-align-items: flex-start;
+      -moz-align-items: flex-start;
+      -ms-align-items: flex-start;
+      -o-align-items: flex-start;
+      align-items: flex-start;
+      -ms-flex-align: start;
+      text-align: center;
+      padding: 0 2em; }
+      header nav ul li a {
+        font-size: 1em;
+        text-transform: uppercase;
+        font-weight: bold; }
 
-.border {
-  background: #30d683;
-  position: fixed;
-  z-index: 100; }
-  .border.top {
-    top: 0;
-    height: 10px;
-    width: 100%; }
-  .border.bottom {
-    bottom: 0;
-    height: 10px;
-    width: 100%; }
-  .border.left {
-    height: 100%;
-    width: 10px;
-    left: 0; }
-  .border.right {
-    height: 100%;
-    width: 10px;
-    right: 0; }
+/* header{
+	//position: absolute;
+	width: 100%;
+	margin: 10px 0 0 0;
+	.header-inner{
+		@include outer-container;
+	}
+	.logo{
+		@include span-columns(4);
+		@include pad(20px);
+		a{
+			word-spacing: 0;
+			text-transform: uppercase;
+			color: $d-gray;
+			font-weight: 700;
+			font-size: 24px;
+			span{
+				color: $green;
+			}
+		}
+	}
+	nav{
+		@include span-columns(8);
 
+		ul{
+			float: right;
+			text-align: right;
+			margin: 15px 0 0 0;
+			li{
+				display: inline-block;
+				margin: 0 20px;
+				a{
+					padding: 10px 4px;
+					display: block;
+					text-transform: uppercase;
+					font-weight: 700;
+					color: $gray;
+					font-size: 18px;
+					border-bottom: 4px solid transparent;
+					&:hover{
+						border-color: $gray;
+						color: $green;
+					}
+				}
+			}
+		}
+	}
+}
+
+//Borders
+.border{
+	background: #30d683;
+	position: fixed;
+	z-index: 100;
+	&.top{
+		top: 0;
+		height: 10px;
+		width: 100%;
+	}
+	&.bottom{
+		bottom: 0;
+		height: 10px;
+		width: 100%;
+	}
+	&.left{
+		height: 100%;
+		width: 10px;
+		left: 0;
+	}
+	&.right{
+		height: 100%;
+		width: 10px;
+		right: 0;
+	}
+}
+*/
 .about {
   height: auto;
   padding: 100px 0; }
