@@ -13,7 +13,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-family: "Avenir Next W01", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "Avenir Next", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 1em;
   -webkit-font-smoothing: antialiased;
   font-weight: 600;
@@ -52,7 +52,7 @@ label {
 input,
 select {
   display: block;
-  font-family: "Avenir Next W01", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "Avenir Next", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 1em; }
 
 input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], input:not([type]), textarea,
@@ -62,7 +62,7 @@ select[multiple] {
   border-radius: 3px;
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
   box-sizing: border-box;
-  font-family: "Avenir Next W01", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "Avenir Next", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 1em;
   margin-bottom: 0.75em;
   padding: 0.5em;
@@ -149,7 +149,7 @@ th {
 
 body {
   color: #606060;
-  font-family: "Avenir Next W01", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "Avenir Next", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 1em;
   line-height: 1.5; }
 
@@ -159,7 +159,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Avenir Next W01", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "Avenir Next", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 1em;
   line-height: 1.2;
   margin: 0 0 0.75em; }
@@ -632,7 +632,7 @@ textarea {
   margin: 10px 0;
   padding: 10px 20px;
   border: 3px solid #000;
-  font-family: "Avenir Next W01", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "Avenir Next", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   color: #000;
   text-transform: uppercase;
   font-weight: 700; }
@@ -715,17 +715,17 @@ header .header-inner {
 header h1 {
   text-transform: uppercase;
   text-align: center;
-  line-height: .4;
+  line-height: .5;
   font-size: 10.5vw;
   margin: 0;
+  font-weight: 700;
   letter-spacing: .075em; }
 header .navigation {
   position: absolute;
   width: 100%;
   top: 0;
   left: 0;
-  padding: .25em 0;
-  background: rgba(255, 255, 255, 0.5); }
+  background: rgba(255, 255, 255, 0.6); }
 header nav {
   float: left;
   display: block;
@@ -781,8 +781,15 @@ header nav {
       padding: 0 2em; }
       header nav ul li a {
         font-size: 1em;
+        padding: .25em .5em;
+        display: block;
         text-transform: uppercase;
-        font-weight: bold; }
+        font-weight: 700;
+        color: #414141;
+        border-bottom: 4px solid transparent; }
+        header nav ul li a:hover {
+          border-bottom: 4px solid #30D683;
+          color: #000; }
 
 /* header{
 	//position: absolute;
@@ -860,6 +867,21 @@ header nav {
 	}
 }
 */
+.hero {
+  text-align: center;
+  position: relative;
+  z-index: -1;
+  top: -34px; }
+  .hero h1 {
+    text-transform: uppercase;
+    line-height: 1;
+    font-size: 10.5vw;
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: .075em; }
+  .hero p {
+    font-size: 2vw; }
+
 .about {
   height: auto;
   padding: 100px 0; }
@@ -870,7 +892,8 @@ header nav {
 
 .work {
   background: #F5F5F5;
-  padding: 30px 0; }
+  padding: 30px 0;
+  margin: 7em 0 0; }
   .work .grid {
     float: left;
     display: block;

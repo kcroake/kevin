@@ -5,17 +5,17 @@ header{
 	h1{
 		text-transform: uppercase;
 		text-align: center;
-		line-height: .4;
+		line-height: .5;
 		font-size: 10.5vw;
 		margin: 0;
+		font-weight: 700;
 		letter-spacing: .075em;
 	}
 	.navigation{
 		position: absolute;
 		width: 100%;
 		top: 0; left:0;
-		padding: .25em 0;
-		background: rgba(#fff,.5);
+		background: rgba(#fff,.6);
 	}
 	nav{
 		@include span-columns(12);
@@ -32,8 +32,16 @@ header{
 				 padding: 0 2em;
 				 a{
 					 font-size: 1em;
+					 padding: .25em .5em;
+					 display: block;
 					 text-transform: uppercase;
-					 font-weight: bold;
+					 font-weight: 700;
+					 color: $gray;
+					 border-bottom: 4px solid transparent;
+						&:hover{
+							border-bottom: 4px solid $green;
+							color: #000;
+						}
 				 }
 			}
 		}

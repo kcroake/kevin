@@ -1,32 +1,18 @@
-.intro{
-	padding: 100px 0 0 0;
-	//height: 500px;
-//	background: $red;
-	overflow: hidden;
-
+.hero{
+	text-align: center;
+    position: relative;
+    z-index: -1;
+    top: -34px;
 	h1{
+		text-transform: uppercase;
 
-		//position: absolute;
-		font-size: 4em;
-
-		small{
-			display: block;
-			font-weight: normal;
-
-		}
+		line-height:1;
+		font-size: 10.5vw;
+		margin: 0;
+		font-weight: 700;
+		letter-spacing: .075em;
 	}
-	.portrait{
-		position: relative;
-		border-radius: 300px;
-		overflow: hidden;
-		float: right;
-		@include size(325px);
-		//@include span-columns(4);
-		box-shadow: 5px 6px 0px 2px $greenGray;
-		img{
-			max-width: 100%;
-			width: 100%;
-			position: absolute;
-		}
+	p{
+		font-size: 2vw;
 	}
 }
