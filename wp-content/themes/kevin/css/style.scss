@@ -12,13 +12,7 @@ $greatestThing: false !default;
 	}
 }
 
-//Vars
-$gray: #414141;
-$greenGray: #CCDFCB;
-$red: #FF6A5C;
-$teal: #056571;
-$tablet: new-breakpoint(max-width 768px 4);
-$mobile: new-breakpoint(max-width 480px 4);
+
 /* ========================================================================== */
 /* Author's custom styles */
 /* ========================================================================== */
@@ -31,27 +25,34 @@ $mobile: new-breakpoint(max-width 480px 4);
 
 @import 'modules/work.scss';
 
-#my-blog{
+
+
+.blog{
+	padding: 2rem 0;
+	margin: 1rem 0;
+	background: #ECECEC;
+	h2{
+		font-size: 2.75em;
+		text-transform: uppercase; 
+	}
 	ul{
 		li{
 			@include span-columns(6);
-			.thumbnail{
-				shape-outside: circle();
-				float: left;
-				height: 100px;
-				width: 100px;
-				overflow: hidden;
-				border-radius: 100px;
-				margin: -18px 32px 10px 0;
-			}
-
-			h2{
+			background: #fff;
+			box-sizing: border-box;
+			padding: 2em;
+			// time{
+			// 	color:
+			// }
+			h3{
 				font-size: 2em;
-				font-weight: 300;
+				font-weight: 700;
+				text-transform: uppercase;
 				margin-bottom: 10px;
+				letter-spacing: .05em;
 			}
 			p{
-				font-size: 85%;
+				font-size: 1.25em;
 			}
 		}
 	}
@@ -59,8 +60,8 @@ $mobile: new-breakpoint(max-width 480px 4);
 
 .contact{
 	ul{
-		@include span-columns(8);
-		@include shift(2);
+		@include span-columns(10);
+		@include shift(1);
 		li{
 			label{
 				display: none;
@@ -77,8 +78,8 @@ $mobile: new-breakpoint(max-width 480px 4);
 }
 
 
-
-
+@import 'modules/weekend.scss';
+@import 'modules/hello-world.scss';
 
 
 

@@ -1,4 +1,19 @@
 header{
+	width: 100%;
+//position: absolute;
+//border-bottom:1px solid rgba($gray,.75);
+	box-shadow: inset 0px 0px 5px rgba(0,0,0,.5);
+	background-image: url(../img/white_carbon.png);
+
+	&.fixed{
+		@include position(fixed, -50px auto auto auto);
+		@include transition(all .5s ease-out);
+	}
+	&.flipin{
+		top: 0;
+		position: fixed;
+	}
+
 	.header-inner{
 		@include outer-container;
 	}
@@ -12,10 +27,12 @@ header{
 		letter-spacing: .075em;
 	}
 	.navigation{
-		position: absolute;
+		position: relative;
 		width: 100%;
 		top: 0; left:0;
-		background: rgba(#fff,.6);
+		z-index: 9999;
+		background: rgba(#fff,.8);
+
 	}
 	nav{
 		@include span-columns(12);
@@ -26,21 +43,23 @@ header{
 			@include justify-content(center);
 			@include flex-wrap(wrap);
 			li{
-				 //@include flex(1);
 				 @include align-items(flex-start);
 				 text-align: center;
-				 padding: 0 2em;
+				 margin: 0 2em;
 				 a{
-					 font-size: 1em;
-					 padding: .25em .5em;
+					 font-size: .875em;
+					 line-height: 1;
+					 padding: .9em .5em 1em;
+					 font-family: $head;
 					 display: block;
 					 text-transform: uppercase;
 					 font-weight: 700;
 					 color: $gray;
-					 border-bottom: 4px solid transparent;
+					 //border-bottom: 4px solid transparent;
 						&:hover{
-							border-bottom: 4px solid $green;
-							color: #000;
+							//border-bottom: 4px solid $green;
+							color: #FFF;
+							background: $green;
 						}
 				 }
 			}

@@ -2,15 +2,22 @@
 //@import url(https://fonts.googleapis.com/css?family=Bitter:400,700,400italic|Raleway:100,300,400,700);font-family: 'Ubuntu', sans-serif;
 //@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,300italic,700,400,400italic|Abel);
 //@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:700,300|Roboto+Condensed:400,300,700,400italic);
-@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,900,300);
-//   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+//@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,900,300);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,700,800);
+//Code Page
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono);
+//font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 
-$base-font-family: "Avenir Next", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+//$base-font-family: "Avenir Next", "Avenir Next W01", "Avenir",  "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$base-font-family: 'Georgia';
 $base: $base-font-family;
-$heading-font-family: "Avenir Next", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$heading-font-family: 'Tahoma';
+//$heading-font-family: "Avenir Next", "Avenir Next W01", "Avenir", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 $head: $heading-font-family;
 // Font Sizes
 $base-font-size: 1em;
+
+$code:'Ubuntu Mono', monospaced;
 
 // Line height
 $base-line-height: 1.5;
@@ -30,7 +37,13 @@ $light-gray: #ddd;
 $lighter-gray: #F5F5F5;
 $green: #30D683;
 $d-gray: #606060;
-
+//Vars
+$gray: #414141;
+$greenGray: #CCDFCB;
+$red: #FF6A5C;
+$teal: #056571;
+$tablet: new-breakpoint(max-width 768px 4);
+$mobile: new-breakpoint(max-width 480px 4);s
 // Font Colors
 $base-font-color: $dark-gray;
 $action-color: $blue;
